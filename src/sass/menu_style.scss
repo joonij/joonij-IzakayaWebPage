@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import "_base.scss";
+
+.header {
+    .nav {
+        .menu {
+            .menu_item {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.container {
+    width: 100%;
+    background: url(../img/background.png) center;
+    background-size: cover;
+    &:before {
+        display: block;
+        width: 100%;
+        height: 500px;
+        background: url(../img/menu/main_img.jpg) center;
+        background-size: cover;
+        content: "";
+    }
+    .main_title {
+        display: block;
+        border-right: 20px solid #673826;
+        border-left: 20px solid #673826;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: $Myeongjo;
+    }
+    .article {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        background-color: rgba(123, 77, 59, 0.7);
+        text-align: center;
+        img {
+            width: 100%;
+        }
+        .content {
+            float: left;
+            width: 15%;
+            height: 450px;
+            margin: 20px 2% 40px 2%;
+            background: url(../img/menu/menu.jpg) center;
+            background-size: cover;
+            border-radius: 20px;
+            color: #fff;
+            box-shadow: 5px 5px 20px #000;
+            dt {
+                display: inline-block;
+                margin: 30px auto;
+                font-size: 26px;
+                font-style: normal;
+                font-family: $Myeongjo;
+            }
+            dd {
+                font-size: 16px;
+                word-wrap: break-word;
+                font-family: $Gothic;
+            }
+        }
+        &:after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    .container {
+        .article {
+            .content {
+                dt {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        .article {
+            img {
+                display: none;
+            }
+            .content {
+                height: 540px;
+                
+                dt {
+                    font-size: 43px;
+                }
+                dd {
+                    display: none;
+                }
+            }
+        }
+    }
+}
