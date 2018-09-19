@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>히카리</title>
+    <link rel="stylesheet" type="text/css" href="src/css/booking_style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="src/js/default.js"></script>
+    <script type="text/javascript" src="src/js/booking_js.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <img src="src/img/logo3.png" alt="히카리">
+        </h1>
+        <nav class="nav"> 
+            <button class="menu_bar" type="button">메뉴바</button>
+            <div class="pop_up_menu">
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html">HOME</a></li>
+                    <li class="menu_item"><a href="menu.html">MENU</a></li>
+                    <li class="menu_item"><a href="store.html">STORE</a></li>
+                    <li class="menu_item select"><a href="booking.html">BOOKING</a></li>
+                </ul>
+                <button class="close" type="button">메뉴닫기</button>
+            </div>
+            <ul class="menu">
+                <li class="menu_item"><a href="index.html">HOME</a></li>
+                <li class="menu_item"><a href="menu.html">MENU</a></li>
+                <li class="menu_item"><a href="store.html">STORE</a></li>
+                <li class="menu_item on"><a href="booking.html">BOOKING</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <h2 class="blind">예약</h2>
+        <div class="title">
+            <p>맛있는 이야기,<br />
+            이 곳에서 나누어요.</p>
+        </div>
+        <article class="content">
+            <form class="form" action="#" method="POST">
+                <label for="name" class="input_area">예약자 이름 :
+                    <input type="text" name="yourname" id="name" />
+                </label>
+                <label for="mobile" class="input_area">핸드폰 번호 : 
+                    <input type="text" name="mobile" id="mobile" />
+                </label>
+                <label for="order" class="input_area">주문 요리 : 
+                    <input type="text" name="order" id="order" />
+                </label>
+                <label for="request" class="input_area">요청 사항 : 
+                    <input type="text" name="request" id="request" />
+                </label>
+                <button class="submit_btn" type="submit">예약하기</button>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>
